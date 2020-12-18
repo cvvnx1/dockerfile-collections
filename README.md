@@ -1,2 +1,2 @@
-# dockerfile-collections
+# Dockerfile-collections
 Dockerfile collections
