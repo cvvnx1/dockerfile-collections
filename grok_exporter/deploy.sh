@@ -5,7 +5,7 @@ ROOT="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 cd ${ROOT}
 
 for tag in *; do
-  echo "Scan {tag} ..."
+  echo "Scan ${tag} ..."
   [[ -d "${tag}" ]] \
   && echo "Push ${tag} ..." \
   && cd ${ROOT}/${tag} \
