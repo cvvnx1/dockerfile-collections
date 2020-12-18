@@ -6,7 +6,6 @@ LABEL Version="1.0.0.RC5"
 ENV GROK_ARCH "grok_exporter-1.0.0.RC5.linux-amd64"
 ENV GROK_VERSION "v1.0.0.RC5"
 
-VOLUME ["/log/"]
 WORKDIR /grok
 
 RUN apt-get update -qqy \
