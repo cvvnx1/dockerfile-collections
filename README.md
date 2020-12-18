@@ -11,3 +11,7 @@ docker login -u cvvnx1
 # Dockerfile-collections
 
 Dockerfile collections
+
+# Grok patterns test
+
+https://grokconstructor.appspot.com/do/match
