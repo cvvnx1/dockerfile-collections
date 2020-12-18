@@ -1,7 +1,8 @@
 # shellcheck disable=SC2164
 ROOT="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
-for tag in ${ROOT}/*; do
+for f in ${ROOT}/*; do
+  tag="$(basename ${f})"
   echo "Push ${tag} ..."
   [[ -d "${tag}" ]] \
   && cd ${ROOT}/${tag} \
