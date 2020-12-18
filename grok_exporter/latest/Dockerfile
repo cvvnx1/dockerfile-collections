@@ -16,9 +16,9 @@ RUN apt-get update -qqy \
     && update-ca-certificates \
     && wget https://github.com/fstab/grok_exporter/releases/download/$GROK_VERSION/$GROK_ARCH.zip \
     && unzip $GROK_ARCH.zip \
-    && cp -a $GROK_ARCH/grok_exporter ./ \
+    && mv $GROK_ARCH default \
     && rm -f $GROK_ARCH.zip \
     && apt-get --autoremove purge -qqy \
        wget unzip ca-certificates
 
-CMD ["./grok_exporter", "-config", "/grok/config.yml"]
+CMD ["./default/grok_exporter", "-config", "/grok/config.yml"]
