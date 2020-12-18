@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 git fetch -a
-git rebase origin/master
+git rebase origin/main
