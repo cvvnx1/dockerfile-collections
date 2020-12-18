@@ -2,6 +2,7 @@
 ROOT="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 for tag in ${ROOT}/*; do
+  echo "Push ${tag} ..."
   [[ -d "${tag}" ]] \
   && cd ${ROOT}/${tag} \
   && docker build . -t cvvnx1/grok_exporter:${tag} \
