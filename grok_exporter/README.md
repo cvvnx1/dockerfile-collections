@@ -68,3 +68,4 @@ curl http://localhost:9144/metrics
 ### References
 
 - https://github.com/fstab/grok_exporter/blob/master/CONFIG.md
+- https://grokconstructor.appspot.com/do/match
